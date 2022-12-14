@@ -5,3 +5,6 @@
 # (10 points): As a player, I want the correct player to win a given round based on the choices made by each player.  See below for game rules!
 # (10 points): As a player, I want the game of RPSLS to be at minimum a “best of three” to decide a winner. 
 
+from game import Game
+
+game_one = Game()
