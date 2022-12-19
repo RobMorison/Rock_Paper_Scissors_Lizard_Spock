@@ -16,8 +16,8 @@ class Game:
         
 
     def intro(self):
-        # sleep(1)
-        print('\n\n\nWelcome to Rock Paper Scissors Lizard Spock.')
+        sleep(1)
+        # print('\n\n\nWelcome to Rock Paper Scissors Lizard Spock.')
         # sleep(1)
         # print('\nEach match will be best of three games \nUse the number keys to enter your selection\n')
         # sleep(1)
@@ -99,6 +99,6 @@ class Game:
     
     def display_winner(self):
         if self.player_one.wins == 2:
-            print('\nPlayer One is the Grand Champion!')
+            print('\nPlayer One is the Grand Champion!\n')
         else:
-            print('\nPlayer Two is the Grand Champion!')
+            print('\nPlayer Two is the Grand Champion!\n')
