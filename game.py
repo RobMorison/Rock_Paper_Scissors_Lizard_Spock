@@ -39,7 +39,7 @@ class Game:
         # sleep(1)
         # print('Paper disproves Spock')
         # sleep(1)
-        # print('SPock vaporizes Rock')
+        # print('Spock vaporizes Rock')
 
 
     def number_of_players(self):
@@ -62,43 +62,57 @@ class Game:
 
         
             if self.player_one.chosen_gesture == self.player_two.chosen_gesture:
+                sleep(1)
                 print("\nIt's a tie!")
             elif self.player_one.chosen_gesture == 'Rock' and self.player_two.chosen_gesture == 'Scissors':
+                sleep(1)
                 print('\nPlayer 1 wins!')
                 self.player_one.wins += 1
             elif self.player_one.chosen_gesture == 'Rock' and self.player_two.chosen_gesture == 'Lizard':
+                sleep(1)
                 print('\nPlayer 1 wins!')
                 self.player_one.wins += 1
             elif self.player_one.chosen_gesture == 'Scissors' and self.player_two.chosen_gesture == 'Paper':
+                sleep(1)
                 print('\nPlayer 1 wins!')
                 self.player_one.wins += 1
             elif self.player_one.chosen_gesture == 'Scissors' and self.player_two.chosen_gesture == 'Lizard':
+                sleep(1)
                 print('\nPlayer 1 wins!')
                 self.player_one.wins += 1
             elif self.player_one.chosen_gesture == 'Paper' and self.player_two.chosen_gesture == 'Rock':
+                sleep(1)
                 print('\nPlayer 1 wins!')
                 self.player_one.wins += 1
             elif self.player_one.chosen_gesture == 'Paper' and self.player_two.chosen_gesture == 'Spock':
+                sleep(1)
                 print('\nPlayer 1 wins!')
                 self.player_one.wins += 1
             elif self.player_one.chosen_gesture == 'Lizard' and self.player_two.chosen_gesture == 'Spock':
+                sleep(1)
                 print('\nPlayer 1 wins!')
                 self.player_one.wins += 1
             elif self.player_one.chosen_gesture == 'Lizard' and self.player_two.chosen_gesture == 'Paper':
+                sleep(1)
                 print('\nPlayer 1 wins!')
                 self.player_one.wins += 1
             elif self.player_one.chosen_gesture == 'Spock' and self.player_two.chosen_gesture == 'Scissors':
+                sleep(1)
                 print('\nPlayer 1 wins!')
                 self.player_one.wins += 1
             elif self.player_one.chosen_gesture == 'Spock' and self.player_two.chosen_gesture == 'Rock':
+                sleep(1)
                 print('\nPlayer 1 wins!')
                 self.player_one.wins += 1
             else:
+                sleep(1)
                 print("\nPlayer 2 wins!")
                 self.player_two.wins += 1
     
     def display_winner(self):
         if self.player_one.wins == 2:
+            sleep(1)
             print('\nPlayer One is the Grand Champion!\n')
         else:
+            sleep(1)
             print('\nPlayer Two is the Grand Champion!\n')

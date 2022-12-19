@@ -15,24 +15,25 @@ class Human(Player):
         
         
         self.valid_gesture = False
-
         while self.valid_gesture == False:
             self.user_choice = input('\nChoose 0 for Rock\nChoose 1 for Paper\nChoose 2 for Scissors\nChoose 3 for Lizard\nChoose 4 for Spock\n\nChoose your gesture: ')       
-            self.chosen_gesture = int(self.user_choice) # convert user input to int() and replace 0 with that user input variable   
-            if self.chosen_gesture == 0:
-                print(f'You have chosen {self.gestures[0]}')
-                self.valid_gesture = True
-            elif self.chosen_gesture == 1:
-                print(f'YOu have chosen {self.gestures[1]}')
-                self.valid_gesture = True
-            elif self.chosen_gesture == 2:
-                print(f'You have chosen {self.gestures[2]}')
-                self.valid_gesture = True
-            elif self.chosen_gesture == 3:
-                print(f'You have chosen {self.gestures[3]}')
-                self.valid_gesture = True
-            elif self.chosen_gesture == 4:
-                print(f'You have chosen {self.gestures[4]}')
-                self.valid_gesture = True
+            
+            if self.user_choice in self.options_list:
+                self.chosen_gesture = self.gestures[int(self.user_choice)] # convert user input to int() and replace 0 with that user input variable   
+                if self.chosen_gesture == self.gestures[0]:
+                    print(f'You have chosen {self.gestures[0]}')
+                    self.valid_gesture = True
+                elif self.chosen_gesture == self.gestures[1]:
+                    print(f'You have chosen {self.gestures[1]}')
+                    self.valid_gesture = True
+                elif self.chosen_gesture == self.gestures[2]:
+                    print(f'You have chosen {self.gestures[2]}')
+                    self.valid_gesture = True
+                elif self.chosen_gesture == self.gestures[3]:
+                    print(f'You have chosen {self.gestures[3]}')
+                    self.valid_gesture = True
+                elif self.chosen_gesture == self.gestures[4]:
+                    print(f'You have chosen {self.gestures[4]}')
+                    self.valid_gesture = True
             else:
-                print('Invalid selection. Choose again')
+                print(f'{self.user_choice} is an invalid selection. Choose again.')
