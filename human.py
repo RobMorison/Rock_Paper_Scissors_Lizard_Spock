@@ -18,7 +18,7 @@ class Human(Player):
         while self.valid_gesture == False:
             self.user_choice = input('\nChoose 0 for Rock\nChoose 1 for Paper\nChoose 2 for Scissors\nChoose 3 for Lizard\nChoose 4 for Spock\n\nChoose your gesture: ')       
             
-            if self.user_choice in self.options_list:
+            if self.user_choice in self.options_list: # Can use 'in' keyword to validate user input a list of a list
                 self.chosen_gesture = self.gestures[int(self.user_choice)] # convert user input to int() and replace 0 with that user input variable   
                 if self.chosen_gesture == self.gestures[0]:
                     print(f'You have chosen {self.gestures[0]}')
